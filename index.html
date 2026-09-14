@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO On-Page -->
+  <title>GỐM KÝ | Workshop Làm Gốm Hà Nội &amp; Gốm Cá Nhân Hóa</title>
+  <meta name="description" content="GỐM KÝ — Mô hình coffee kết hợp workshop làm gốm Hà Nội và dịch vụ gốm cá nhân hóa gắn mã QR lưu giữ câu chuyện. Chạm gốm bằng tay, để gốm kể thay lời bạn.">
+  <meta name="keywords" content="workshop làm gốm Hà Nội, gốm cá nhân hóa, quà tặng cá nhân hóa, làm gốm Hà Nội, Gốm Ký">
+  <meta name="author" content="GỐM KÝ">
+  <link rel="canonical" href="https://gomky.vn/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:title" content="GỐM KÝ | Workshop Làm Gốm Hà Nội &amp; Gốm Cá Nhân Hóa">
+  <meta property="og:description" content="Chạm gốm bằng tay, để gốm kể thay lời bạn. Trải nghiệm workshop làm gốm ngắm phố tại Tầng 7, 79 Hồ Tùng Mậu và tạo tác phẩm gốm cá nhân hóa gắn mã QR độc bản.">
+  <meta property="og:site_name" content="GỐM KÝ">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts: Playfair Display (Serif) & Plus Jakarta Sans (Sans-serif) hỗ trợ đầy đủ tiếng Việt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- EmailJS SDK từ CDN -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+  <!-- ==========================================================================
+       HEADER (Sticky — Đúng 5 mục theo đúng thứ tự quy định)
+       1. Trang chủ (#home) | 2. Workshop (#workshop) | 3. Gốm cá nhân hoá (#personalization) | 4. Cửa hàng (#shop) | 5. Đặt lịch (#booking)
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="#home" class="brand-logo" aria-label="GỐM KÝ Trang chủ">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="32" cy="52" rx="20" ry="4" fill="#EBE1D5"/>
+          <path d="M22 20 C22 14, 26 12, 32 12 C38 12, 42 14, 42 20 C42 26, 48 34, 46 44 C44 50, 38 52, 32 52 C26 52, 20 50, 18 44 C16 34, 22 26, 22 20 Z" fill="#C05C3D"/>
+          <ellipse cx="32" cy="14" rx="10" ry="2.5" fill="#A84A2D"/>
+          <ellipse cx="32" cy="14" rx="7" ry="1.8" fill="#36241D"/>
+          <path d="M25 24 C24 30, 22 38, 24 44 C25 47, 27 49, 29 50" stroke="#FAF7F2" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.6"/>
+          <circle cx="43" cy="24" r="2" fill="#6B7F67"/>
+        </svg>
+        <span>GỐM KÝ<span class="dot">.</span></span>
+      </a>
+
+      <!-- Menu máy tính (5 mục đúng thứ tự) -->
+      <nav class="nav-desktop" aria-label="Điều hướng chính">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Trang chủ</a></li>
+          <li><a href="#workshop" class="nav-link">Workshop</a></li>
+          <li><a href="#personalization" class="nav-link">Gốm cá nhân hoá</a></li>
+          <li><a href="#shop" class="nav-link">Cửa hàng</a></li>
+          <li><a href="#booking" class="nav-link">Đặt lịch</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#booking" class="btn btn-primary btn-sm btn-header-cta">Đặt lịch ngay</a>
+        <button class="mobile-toggle" aria-label="Mở menu điều hướng" aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu trên màn hình điện thoại -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+      <ul class="mobile-nav-menu">
+        <li><a href="#home" class="mobile-nav-link active">Trang chủ</a></li>
+        <li><a href="#workshop" class="mobile-nav-link">Workshop</a></li>
+        <li><a href="#personalization" class="mobile-nav-link">Gốm cá nhân hoá</a></li>
+        <li><a href="#shop" class="mobile-nav-link">Cửa hàng</a></li>
+        <li><a href="#booking" class="mobile-nav-link">Đặt lịch</a></li>
+      </ul>
+      <a href="#booking" class="btn btn-primary btn-full">Đặt lịch workshop</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         #home — HERO SECTION
+         - Tiêu đề: "Biến ký ức thành một món gốm"
+         - Mô tả ngắn + Slogan: "Chạm gốm bằng tay, để gốm kể thay lời bạn."
+         - 2 nút CTA: "Đặt lịch workshop" (#booking) & "Tạo gốm của tôi" (#personalization)
+         - Giới thiệu ngắn "GỐM KÝ là gì" + 3 card: Thủ công / Cá nhân hóa / Công nghệ
+         ========================================================================== -->
+    <section id="home" class="section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <span class="section-tag terracotta">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              Không gian Coffee &amp; Workshop Gốm
+            </span>
+            
+            <h1 class="hero-title">Biến ký ức thành một món gốm</h1>
+            
+            <blockquote class="hero-slogan-quote">
+              "Chạm gốm bằng tay, để gốm kể thay lời bạn."
+            </blockquote>
+
+            <p class="hero-desc">
+              Một điểm hẹn bình yên tại tầng 7 nhìn ra phố Hồ Tùng Mậu, nơi bạn chậm lại bên ly cà phê thơm, tự tay nắn nót từng thớ đất sét và lưu lại những câu chuyện vô giá của riêng mình.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#booking" class="btn btn-primary">
+                Đặt lịch workshop
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="#personalization" class="btn btn-outline">
+                Tạo gốm của tôi
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+              </a>
+            </div>
+
+            <!-- Đoạn giới thiệu ngắn "GỐM KÝ là gì" -->
+            <div class="concept-box">
+              <div class="concept-box-title">
+                <span class="badge badge-terracotta">Concept</span>
+                <span>GỐM KÝ là gì?</span>
+              </div>
+              <p class="concept-box-text">
+                GỐM KÝ là mô hình <strong>coffee kết hợp workshop làm gốm và dịch vụ gốm cá nhân hóa</strong> — biến hình ảnh, lời nhắn, kỷ niệm thành sản phẩm gốm có thể cầm, dùng, trưng bày hoặc trao tặng. Mỗi tác phẩm được hoàn thiện là một kỷ vật độc bản mang hơi ấm thủ công và tinh thần của người tạo ra nó.
+              </p>
+            </div>
+          </div>
+
+          <!-- Hero Visual: Ảnh thật không gian Workshop tầng 7 Hồ Tùng Mậu -->
+          <div class="hero-visual">
+            <div class="hero-visual-card">
+              <div class="hero-image-wrapper">
+                <img src="assets/workshop-space.jpg" alt="Không gian Workshop GỐM KÝ tầng 7 số 79 Hồ Tùng Mậu" class="hero-real-image" loading="eager">
+              </div>
+              <div class="hero-floating-badge">
+                <span class="pulse-dot"></span>
+                <span>Tầng 7, 79 Hồ Tùng Mậu • 9:00–21:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Card Cốt lõi: Thủ công / Cá nhân hóa / Công nghệ -->
+        <div class="core-cards-grid">
+          <div class="core-card">
+            <div class="core-card-icon">
+              <!-- Handcraft icon -->
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"></path>
+                <path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2"></path>
+                <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"></path>
+                <path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"></path>
+              </svg>
+            </div>
+            <h3 class="core-card-title">Thủ công</h3>
+            <p class="core-card-desc">
+              Từng thớ đất sét được vuốt nặn tỉ mỉ trên bàn xoay, trân trọng chất men mộc tự nhiên và trải qua nhiệt độ nung lửa lò truyền thống để đạt độ bền vững theo thời gian.
+            </p>
+          </div>
+
+          <div class="core-card">
+            <div class="core-card-icon">
+              <!-- Personalization icon -->
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </div>
+            <h3 class="core-card-title">Cá nhân hóa</h3>
+            <p class="core-card-desc">
+              Biến từng món gốm thành kỷ vật mang dấu ấn riêng: khắc chữ viết tay, câu chúc ý nghĩa, phác họa hình ảnh gia đình, thú cưng hoặc cột mốc kỷ niệm đặc biệt.
+            </p>
+          </div>
+
+          <div class="core-card">
+            <div class="core-card-icon">
+              <!-- Technology / QR icon -->
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+            </div>
+            <h3 class="core-card-title">Công nghệ</h3>
+            <p class="core-card-desc">
+              Tích hợp mã QR độc bản gắn liền trên từng thành phẩm, kết nối hiện vật gốm với kho lưu trữ số chứa hình ảnh, âm thanh và lời nhắn gửi vẹn nguyên.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         #workshop — WORKSHOP SECTION
+         - Giới thiệu trải nghiệm
+         - Timeline hành trình: Chọn gốm → Chọn câu chuyện → Sáng tạo → Cá nhân hóa → Hoàn thiện → Nhận thành phẩm
+         - 4 card gói trải nghiệm: Solo, Date, Together, Team (giá [Giá sẽ cập nhật])
+         - Trấn an "Không cần biết làm gốm"
+         - Nút CTA cuộn tới #booking
+         ========================================================================== -->
+    <section id="workshop" class="section section-tint">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Trải nghiệm workshop</span>
+          <h2>Chạm tay vào đất, nặn thành niềm vui</h2>
+          <p class="section-subtitle">
+            Dù bạn đi một mình để tìm sự tĩnh tại, hẹn hò cùng người thương hay tụ họp bạn bè, Gốm Ký mang đến không gian workshop thư thái kết hợp thưởng thức cà phê view phố thoáng đãng.
+          </p>
+        </div>
+
+        <!-- Hành trình 6 bước tại Workshop -->
+        <div class="journey-section">
+          <div class="journey-steps">
+            <div class="journey-step-card">
+              <div class="step-num">1</div>
+              <h4 class="step-title">Chọn gốm</h4>
+              <p class="step-desc">Lựa chọn kiểu dáng phôi hoặc hình mẫu mong muốn sáng tạo</p>
+            </div>
+
+            <div class="journey-step-card">
+              <div class="step-num">2</div>
+              <h4 class="step-title">Chọn câu chuyện</h4>
+              <p class="step-desc">Xác định ý tưởng, ký ức hoặc thông điệp muốn gửi gắm vào tác phẩm</p>
+            </div>
+
+            <div class="journey-step-card">
+              <div class="step-num">3</div>
+              <h4 class="step-title">Sáng tạo</h4>
+              <p class="step-desc">Tự tay vuốt nặn trên bàn xoay và tạo hình dưới sự đồng hành của thợ gốm</p>
+            </div>
+
+            <div class="journey-step-card">
+              <div class="step-num">4</div>
+              <h4 class="step-title">Cá nhân hóa</h4>
+              <p class="step-desc">Vẽ họa tiết, khắc chữ, dấu ấn riêng và tạo mã QR lưu kỷ niệm</p>
+            </div>
+
+            <div class="journey-step-card">
+              <div class="step-num">5</div>
+              <h4 class="step-title">Hoàn thiện</h4>
+              <p class="step-desc">Sản phẩm được tráng men mộc và nung ở nhiệt độ cao chuẩn kỹ thuật</p>
+            </div>
+
+            <div class="journey-step-card">
+              <div class="step-num">6</div>
+              <h4 class="step-title">Nhận thành phẩm</h4>
+              <p class="step-desc">Nhận món gốm hoàn chỉnh tại cửa hàng hoặc gửi tận tay địa chỉ của bạn</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Gói Workshop (Giữ nguyên tên, giá [Giá sẽ cập nhật]) -->
+        <div class="packages-grid">
+          <!-- Gói 1: Solo -->
+          <div class="package-card">
+            <div class="package-header">
+              <span class="package-target">1 người</span>
+              <h3 class="package-title">Gốm Ký Solo</h3>
+              <p class="text-muted">Thời gian dành trọn cho bản thân</p>
+            </div>
+            <div class="package-price">380.000 – 420.000đ/người</div>
+            <ul class="package-features">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Đầy đủ đất sét, bàn xoay và dụng cụ tạo hình</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Thưởng thức 01 đồ uống miễn phí tại quán</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Người hướng dẫn hỗ trợ 1-kèm-1 tận tâm</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Tùy chọn khắc chữ và gắn mã QR kỷ niệm</span>
+              </li>
+            </ul>
+            <a href="#booking" class="btn btn-outline btn-full">Chọn gói Solo</a>
+          </div>
+
+          <!-- Gói 2: Date (Nổi bật) -->
+          <div class="package-card featured">
+            <div class="package-ribbon">Ưu đãi cặp đôi</div>
+            <div class="package-header">
+              <span class="package-target">2 người (Pottery Date)</span>
+              <h3 class="package-title">Gốm Ký Date</h3>
+              <p class="text-muted">Khoảnh khắc gắn kết ngọt ngào</p>
+            </div>
+            <div class="package-price">730.000 – 810.000đ/cặp</div>
+            <ul class="package-features">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Bàn xoay đôi &amp; góc ngồi view ngắm phố lãng mạn</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Set 02 đồ uống đặc biệt cho cặp đôi</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Cùng nhau làm cặp cốc hoặc đĩa đôi kỷ niệm</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Tích hợp mã QR lưu trọn bộ ảnh hẹn hò</span>
+              </li>
+            </ul>
+            <a href="#booking" class="btn btn-primary btn-full">Chọn gói Date</a>
+          </div>
+
+          <!-- Gói 3: Together -->
+          <div class="package-card">
+            <div class="package-header">
+              <span class="package-target">Nhóm bạn / Gia đình</span>
+              <h3 class="package-title">Gốm Ký Together</h3>
+              <p class="text-muted">Kỷ niệm rộn ràng bên người thân</p>
+            </div>
+            <div class="package-price">340.000 – 380.000đ/người</div>
+            <ul class="package-features">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Khu vực bàn lớn quây quần riêng tư</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Đồ uống phục vụ theo từng thành viên</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Hỗ trợ chụp ảnh lưu giữ khoảnh khắc nhóm</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Ưu đãi nhóm bạn &amp; referral bạn bè</span>
+              </li>
+            </ul>
+            <a href="#booking" class="btn btn-outline btn-full">Chọn gói Together</a>
+          </div>
+
+          <!-- Gói 4: Team -->
+          <div class="package-card">
+            <div class="package-header">
+              <span class="package-target">Doanh nghiệp / CLB</span>
+              <h3 class="package-title">Gốm Ký Team</h3>
+              <p class="text-muted">Team building &amp; sáng tạo tập thể</p>
+            </div>
+            <div class="package-price">400.000 – 450.000đ/người</div>
+            <ul class="package-features">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Thiết kế kịch bản hoạt động theo mục tiêu đoàn thể</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Gói teabreak coffee &amp; bánh ngọt cao cấp</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Khắc logo công ty &amp; mã QR thông điệp sự kiện</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Xuất hóa đơn &amp; đóng gói quà tặng doanh nghiệp</span>
+              </li>
+            </ul>
+            <a href="#booking" class="btn btn-outline btn-full">Chọn gói Team</a>
+          </div>
+        </div>
+
+        <!-- Phần Trấn an: "Không cần biết làm gốm" -->
+        <div class="reassurance-card">
+          <div class="reassurance-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+              <line x1="9" y1="9" x2="9.01" y2="9"></line>
+              <line x1="15" y1="9" x2="15.01" y2="9"></line>
+            </svg>
+          </div>
+          <div class="reassurance-content">
+            <h3>Bạn chưa từng làm gốm bao giờ? Đừng lo lắng!</h3>
+            <p>
+              Đội ngũ tại Gốm Ký luôn đồng hành hướng dẫn từng bước từ cách đặt tay, điều tiết tốc độ bàn xoay đến kỹ thuật nắn vuốt dáng gốm. Bạn cũng có thể xem trước catalog mẫu khuôn và bản phác thảo để tự tin tạo nên tác phẩm hoàn hảo ngay trong lần đầu tiên.
+            </p>
+          </div>
+          <a href="#booking" class="btn btn-primary">Đặt lịch trải nghiệm</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         #personalization — GỐM CÁ NHÂN HÓA
+         - Nhấn mạnh tính năng QR lưu giữ câu chuyện (điểm khác biệt cạnh tranh chính)
+         - Trình bày quy trình đặt online (6 bước)
+         - Các loại nội dung cá nhân hóa (ảnh, couple, gia đình, thú cưng, chữ viết tay, quote, artwork, logo)
+         - FAQ ngắn (minh bạch chính sách với placeholder [sẽ cập nhật])
+         ========================================================================== -->
+    <section id="personalization" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag terracotta">Điểm khác biệt độc bản</span>
+          <h2>Mỗi sản phẩm gốm là một câu chuyện riêng</h2>
+          <p class="section-subtitle">
+            Không chỉ là một chiếc cốc hay đĩa gốm thông thường, Gốm Ký trao cho bạn khả năng thổi hồn và gắn kết cảm xúc vào từng chi tiết.
+          </p>
+        </div>
+
+        <!-- Nổi bật tính năng Mã QR (USP Chính) -->
+        <div class="qr-feature-card">
+          <div class="qr-feature-content">
+            <span class="badge badge-terracotta" style="margin-bottom: 0.75rem;">Tính năng độc quyền</span>
+            <h3>Gắn mã QR lưu giữ kỷ niệm vẹn nguyên</h3>
+            <p>
+              Mỗi sản phẩm gốm cá nhân hóa tại Gốm Ký được khắc chìm thẩm mỹ một <strong>mã QR độc bản</strong>. Khi dùng điện thoại quét mã, người cầm chiếc cốc hay đĩa gốm sẽ mở ra trang câu chuyện riêng tư: chứa đựng album ảnh, video kỷ niệm, bài hát đặc biệt hay bức tâm thư bạn dành riêng cho người nhận.
+            </p>
+            <ul class="qr-feature-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Lưu giữ kỷ niệm số bền lâu song hành cùng độ bền của gốm</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Bảo mật nội dung riêng tư, chỉ người quét mã mới xem được</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Món quà ý nghĩa khó quên cho người thương, người thân hay đối tác</span>
+              </li>
+            </ul>
+            <a href="#booking" class="btn btn-primary">Tạo sản phẩm gốm có mã QR</a>
+          </div>
+
+          <div class="qr-visual-box">
+            <div class="qr-code-graphic">
+              <!-- SVG QR Code minh họa tối giản -->
+              <svg width="108" height="108" viewBox="0 0 100 100" fill="currentColor">
+                <!-- Outer Corners -->
+                <rect x="5" y="5" width="30" height="30" rx="3" fill="#36241D"/>
+                <rect x="11" y="11" width="18" height="18" rx="2" fill="#FAF7F2"/>
+                <rect x="15" y="15" width="10" height="10" rx="1" fill="#C05C3D"/>
+
+                <rect x="65" y="5" width="30" height="30" rx="3" fill="#36241D"/>
+                <rect x="71" y="11" width="18" height="18" rx="2" fill="#FAF7F2"/>
+                <rect x="75" y="15" width="10" height="10" rx="1" fill="#C05C3D"/>
+
+                <rect x="5" y="65" width="30" height="30" rx="3" fill="#36241D"/>
+                <rect x="11" y="71" width="18" height="18" rx="2" fill="#FAF7F2"/>
+                <rect x="15" y="75" width="10" height="10" rx="1" fill="#C05C3D"/>
+
+                <!-- QR Data Matrix Dots -->
+                <rect x="42" y="8" width="6" height="6" rx="1" fill="#36241D"/>
+                <rect x="52" y="14" width="6" height="6" rx="1" fill="#6B7F67"/>
+                <rect x="42" y="24" width="6" height="6" rx="1" fill="#36241D"/>
+                <rect x="8" y="45" width="6" height="6" rx="1" fill="#36241D"/>
+                <rect x="18" y="52" width="6" height="6" rx="1" fill="#6B7F67"/>
+                <rect x="44" y="44" width="12" height="12" rx="2" fill="#C05C3D"/>
+                <rect x="65" y="45" width="6" height="6" rx="1" fill="#36241D"/>
+                <rect x="75" y="52" width="6" height="6" rx="1" fill="#36241D"/>
+                <rect x="85" y="44" width="6" height="6" rx="1" fill="#6B7F67"/>
+                <rect x="44" y="68" width="6" height="6" rx="1" fill="#36241D"/>
+                <rect x="54" y="76" width="6" height="6" rx="1" fill="#6B7F67"/>
+                <rect x="68" y="68" width="6" height="6" rx="1" fill="#36241D"/>
+                <rect x="78" y="82" width="12" height="6" rx="1" fill="#36241D"/>
+              </svg>
+            </div>
+            <div class="qr-caption">[Mô phỏng: Mã QR câu chuyện khắc trên men gốm]</div>
+            <p class="text-muted" style="font-size: 0.85rem;">Quét để khám phá trang kỷ niệm &amp; lời nhắn bí mật</p>
+          </div>
+        </div>
+
+        <!-- Quy trình đặt online (6 bước) -->
+        <div class="workflow-section">
+          <div class="text-center" style="margin-bottom: 2rem;">
+            <h3>Quy trình đặt gốm cá nhân hóa trực tuyến</h3>
+            <p class="text-muted" style="margin-top: 0.35rem;">Liền mạch một điểm chạm — bạn chỉ cần gửi ý tưởng, Gốm Ký chăm chút phần còn lại</p>
+          </div>
+          <div class="workflow-grid">
+            <div class="workflow-card">
+              <span class="workflow-step-badge">Bước 1</span>
+              <h4>Chọn sản phẩm</h4>
+              <p>Lựa chọn kiểu dáng cốc, đĩa, khay hoặc bình gốm theo sở thích</p>
+            </div>
+            <div class="workflow-card">
+              <span class="workflow-step-badge">Bước 2</span>
+              <h4>Gửi ảnh / ý tưởng</h4>
+              <p>Gửi hình ảnh, lời nhắn, chữ ký hoặc câu chuyện muốn thể hiện</p>
+            </div>
+            <div class="workflow-card">
+              <span class="workflow-step-badge">Bước 3</span>
+              <h4>Lên thiết kế</h4>
+              <p>Gốm Ký phác thảo market trực quan và bố cục khắc mã QR</p>
+            </div>
+            <div class="workflow-card">
+              <span class="workflow-step-badge">Bước 4</span>
+              <h4>Bạn duyệt</h4>
+              <p>Kiểm tra bản vẽ mẫu, xác nhận màu men và căn chỉnh theo ý muốn</p>
+            </div>
+            <div class="workflow-card">
+              <span class="workflow-step-badge">Bước 5</span>
+              <h4>Hoàn thiện</h4>
+              <p>Nghệ nhân tạo mộc, khắc chìm nội dung, tráng men và nung lò</p>
+            </div>
+            <div class="workflow-card">
+              <span class="workflow-step-badge">Bước 6</span>
+              <h4>Nhận gốm</h4>
+              <p>Thành phẩm đóng hộp chỉn chu trao tận tay bạn hoặc người nhận</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 Loại Nội dung Cá nhân hóa -->
+        <div style="margin-bottom: 4rem;">
+          <div class="text-center" style="margin-bottom: 2rem;">
+            <h3>Bạn có thể đưa gì lên tác phẩm gốm của mình?</h3>
+            <p class="text-muted" style="margin-top: 0.35rem;">Đa dạng hình thức thể hiện phù hợp với mọi nhu cầu lưu niệm và trao tặng</p>
+          </div>
+          <div class="types-grid">
+            <div class="type-card">
+              <div class="type-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              </div>
+              <span class="type-title">Ảnh kỷ niệm</span>
+            </div>
+            <div class="type-card">
+              <div class="type-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </div>
+              <span class="type-title">Khoảnh khắc Couple</span>
+            </div>
+            <div class="type-card">
+              <div class="type-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <span class="type-title">Kỷ niệm gia đình</span>
+            </div>
+            <div class="type-card">
+              <div class="type-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h.01M16 12h.01"/><path d="M12 16c-1.5 0-2-.5-2-.5s.5-.5 2-.5 2 .5 2 .5-.5.5-2 .5z"/></svg>
+              </div>
+              <span class="type-title">Hình thú cưng</span>
+            </div>
+            <div class="type-card">
+              <div class="type-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path></svg>
+              </div>
+              <span class="type-title">Chữ viết tay</span>
+            </div>
+            <div class="type-card">
+              <div class="type-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/></svg>
+              </div>
+              <span class="type-title">Quote tâm đắc</span>
+            </div>
+            <div class="type-card">
+              <div class="type-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <span class="type-title">Artwork tự vẽ</span>
+            </div>
+            <div class="type-card">
+              <div class="type-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </div>
+              <span class="type-title">Logo thương hiệu</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Ngắn — Minh bạch thông tin (Không bịa đặt, dùng placeholder [sẽ cập nhật]) -->
+        <div class="faq-section">
+          <div class="text-center" style="margin-bottom: 2rem;">
+            <h3>Câu hỏi thường gặp &amp; Minh bạch thông tin</h3>
+            <p class="text-muted" style="margin-top: 0.35rem;">Mọi thông tin về quá trình chế tác và quyền lợi của bạn</p>
+          </div>
+
+          <div class="faq-grid">
+            <div class="faq-card">
+              <h4 class="faq-question">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                Quy trình nung và thời gian nhận thành phẩm mất bao lâu?
+              </h4>
+              <p class="faq-answer">
+                Để đảm bảo độ bền và màu men mộc chuẩn sắc, mỗi tác phẩm gốm cần trải qua công đoạn sấy khô tự nhiên, nung mộc lần 1, tráng men và nung bóng lần 2 ở nhiệt độ cao. Thời gian hoàn thiện dự kiến: [sẽ cập nhật]. Khi gốm ra lò đạt chuẩn, chúng tôi sẽ thông báo bạn đến nhận hoặc gửi chuyển phát.
+              </p>
+            </div>
+
+            <div class="faq-card">
+              <h4 class="faq-question">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                Mã QR gắn trên gốm có bị phai hay tróc theo thời gian không?
+              </h4>
+              <p class="faq-answer">
+                Mã QR được khắc chìm trực tiếp vào xương đất hoặc nung men vĩnh cửu trong lò, do đó không lo bị bong tróc hay phai màu khi rửa hoặc đựng đồ nóng/lạnh thông thường. Trang kỷ niệm trực tuyến liên kết với mã QR được duy trì lưu trữ lâu dài.
+              </p>
+            </div>
+
+            <div class="faq-card">
+              <h4 class="faq-question">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                Chính sách đổi / trả và bảo hiểm vận chuyển hàng hóa?
+              </h4>
+              <p class="faq-answer">
+                Gốm Ký đóng gói chống va đập chuyên dụng nhiều lớp. Trong trường hợp sản phẩm bị lỗi chế tác hoặc nứt vỡ do vận chuyển, chúng tôi áp dụng chính sách làm lại hoặc hoàn tiền thỏa đáng: [sẽ cập nhật].
+              </p>
+            </div>
+
+            <div class="faq-card">
+              <h4 class="faq-question">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                Chương trình ưu đãi cặp đôi và giới thiệu bạn bè (referral)?
+              </h4>
+              <p class="faq-answer">
+                Khách hàng đặt gói Pottery Date hoặc giới thiệu người quen cùng trải nghiệm workshop/đặt gốm sẽ nhận voucher quà tặng đặc quyền: [sẽ cập nhật].
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         #shop — CỬA HÀNG SẢN PHẨM
+         - Danh mục 6 nhóm sản phẩm:
+           1. Cốc & Ly | 2. Đĩa & Khay | 3. Gốm thú cưng | 4. Quà kỷ niệm | 5. Quà doanh nghiệp | 6. Bộ sưu tập đặc biệt
+         - Mỗi sản phẩm có nhãn "Có thể cá nhân hóa" và nút "Đặt mẫu này" (cuộn tới #booking)
+         ========================================================================== -->
+    <section id="shop" class="section section-tint">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Cửa hàng Gốm Ký</span>
+          <h2>Bộ sưu tập gốm thủ công mộc ấm</h2>
+          <p class="section-subtitle">
+            Khám phá 6 danh mục sản phẩm được nặn tay và nung lò tỉ mỉ. Mỗi mẫu đều sẵn sàng để cá nhân hóa theo câu chuyện của bạn.
+          </p>
+        </div>
+
+        <div class="shop-grid">
+          <!-- Nhóm 1: Cốc & Ly -->
+          <div class="product-card">
+            <div class="product-image-thumb">
+              <span class="badge badge-sage product-badge-overlay">Có thể cá nhân hóa</span>
+              <img src="assets/product-cup.jpg" alt="Mẫu Cốc &amp; Ly gốm mộc GỐM KÝ" loading="lazy">
+            </div>
+            <div class="product-body">
+              <div class="product-info">
+                <h3>Cốc &amp; Ly</h3>
+                <p>Chiếc cốc thân thuộc mỗi sớm mai. Có thể khắc tên, quote truyền cảm hứng hoặc gắn mã QR bài hát yêu thích bên dưới đáy cốc.</p>
+              </div>
+              <div class="product-card-footer">
+                <span class="product-price-label">[Giá sẽ cập nhật]</span>
+                <button class="btn btn-primary btn-sm btn-order-product" data-product-name="Cốc &amp; Ly gốm mộc">Đặt mẫu này</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nhóm 2: Đĩa & Khay -->
+          <div class="product-card">
+            <div class="product-image-thumb">
+              <span class="badge badge-sage product-badge-overlay">Có thể cá nhân hóa</span>
+              <img src="assets/product-plate.jpg" alt="Mẫu Đĩa &amp; Khay gốm thủ công GỐM KÝ" loading="lazy">
+            </div>
+            <div class="product-body">
+              <div class="product-info">
+                <h3>Đĩa &amp; Khay</h3>
+                <p>Đĩa lót bánh, khay đựng phụ kiện trang sức hoặc kỷ vật nhỏ gọn. Tùy biến họa tiết vẽ tay và viền chữ kỷ niệm tinh tế.</p>
+              </div>
+              <div class="product-card-footer">
+                <span class="product-price-label">[Giá sẽ cập nhật]</span>
+                <button class="btn btn-primary btn-sm btn-order-product" data-product-name="Đĩa &amp; Khay gốm thủ công">Đặt mẫu này</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nhóm 3: Gốm thú cưng -->
+          <div class="product-card">
+            <div class="product-image-thumb">
+              <span class="badge badge-sage product-badge-overlay">Có thể cá nhân hóa</span>
+              <img src="assets/product-pet.jpg" alt="Gốm thú cưng độc bản GỐM KÝ" loading="lazy">
+            </div>
+            <div class="product-body">
+              <div class="product-info">
+                <h3>Gốm thú cưng</h3>
+                <p>Dành riêng cho những người bạn bốn chân. Bát ăn thủ công đầm tay, khắc tên boss, chân dung minh họa và mã QR thông tin chủ nhân.</p>
+              </div>
+              <div class="product-card-footer">
+                <span class="product-price-label">[Giá sẽ cập nhật]</span>
+                <button class="btn btn-primary btn-sm btn-order-product" data-product-name="Gốm thú cưng khắc tên">Đặt mẫu này</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nhóm 4: Quà kỷ niệm -->
+          <div class="product-card">
+            <div class="product-image-thumb">
+              <span class="badge badge-sage product-badge-overlay">Có thể cá nhân hóa</span>
+              <img src="assets/product-gift.jpg" alt="Gốm quà kỷ niệm khắc dấu ấn GỐM KÝ" loading="lazy">
+            </div>
+            <div class="product-body">
+              <div class="product-info">
+                <h3>Quà kỷ niệm</h3>
+                <p>Món quà đánh dấu ngày cưới, ngày yêu hay sinh nhật người thương. Gắn mã QR dẫn tới video hành trình hạnh phúc của hai bạn.</p>
+              </div>
+              <div class="product-card-footer">
+                <span class="product-price-label">[Giá sẽ cập nhật]</span>
+                <button class="btn btn-primary btn-sm btn-order-product" data-product-name="Gốm quà kỷ niệm">Đặt mẫu này</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nhóm 5: Quà doanh nghiệp -->
+          <div class="product-card">
+            <div class="product-image-thumb">
+              <span class="badge badge-sage product-badge-overlay">Có thể cá nhân hóa</span>
+              <img src="assets/product-corporate.jpg" alt="Quà doanh nghiệp và Team-building GỐM KÝ" loading="lazy">
+            </div>
+            <div class="product-body">
+              <div class="product-info">
+                <h3>Quà doanh nghiệp</h3>
+                <p>Giải pháp quà tặng tri ân khách hàng, đối tác và nhân sự cao cấp. Khắc logo tinh xảo, mã QR thông điệp thương hiệu và đóng gói chuẩn mực.</p>
+              </div>
+              <div class="product-card-footer">
+                <span class="product-price-label">[Giá sẽ cập nhật]</span>
+                <button class="btn btn-primary btn-sm btn-order-product" data-product-name="Quà doanh nghiệp in khắc logo">Đặt mẫu này</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nhóm 6: Bộ sưu tập đặc biệt -->
+          <div class="product-card">
+            <div class="product-image-thumb">
+              <span class="badge badge-sage product-badge-overlay">Có thể cá nhân hóa</span>
+              <img src="assets/product-special.jpg" alt="Bộ sưu tập đặc biệt phiên bản giới hạn GỐM KÝ" loading="lazy">
+            </div>
+            <div class="product-body">
+              <div class="product-info">
+                <h3>Bộ sưu tập đặc biệt</h3>
+                <p>Những chế tác phiên bản giới hạn với hiệu ứng men hỏa biến độc đáo. Mỗi chiếc là một biến số màu sắc riêng không chiếc nào trùng lặp.</p>
+              </div>
+              <div class="product-card-footer">
+                <span class="product-price-label">[Giá sẽ cập nhật]</span>
+                <button class="btn btn-primary btn-sm btn-order-product" data-product-name="Bộ sưu tập đặc biệt phiên bản giới hạn">Đặt mẫu này</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         #booking — FORM ĐẶT LỊCH GỬI EMAIL THẬT
+         - Form gồm: Họ tên, Số điện thoại/Email liên hệ, Ngày mong muốn, Khung giờ, Số người, Gói workshop, Ghi chú
+         - Tích hợp EmailJS gửi email thực tế tới dieuthuvtpt@gmail.com
+         - Thông báo:
+           + Thành công: "Cảm ơn bạn! Gốm Ký đã nhận được yêu cầu và sẽ liên hệ trong vòng 30 phút."
+           + Thất bại: "Có lỗi xảy ra, vui lòng thử lại hoặc liên hệ trực tiếp qua [số điện thoại/Fanpage]."
+         ========================================================================== -->
+    <section id="booking" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag terracotta">Đặt lịch nhanh chóng</span>
+          <h2>Hẹn một buổi chạm gốm cùng GỐM KÝ</h2>
+          <p class="section-subtitle">
+            Trải nghiệm liền mạch một điểm chạm. Hãy để lại thông tin, đội ngũ Gốm Ký sẽ liên hệ xác nhận trong vòng 30 phút trong giờ làm việc.
+          </p>
+        </div>
+
+        <div class="booking-wrapper">
+          <!-- Thông tin hỗ trợ & OVP Cam kết -->
+          <div class="booking-info">
+            <div class="commitment-card">
+              <h4>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                Cam kết phản hồi trong 30 phút
+              </h4>
+              <p>
+                Trong khung giờ hoạt động (9:00 – 21:00 hằng ngày), đội ngũ tư vấn Gốm Ký sẽ phản hồi xác nhận khung giờ, bàn xoay và tư vấn chi tiết trong vòng 30 phút.
+              </p>
+            </div>
+
+            <ul class="ovp-highlights">
+              <li class="ovp-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <div>
+                  <strong>Trải nghiệm trực quan trước khi đến:</strong> Bạn có thể nhắn trước qua Fanpage để xem hình ảnh góc ngồi ngắm phố hoặc catalog mẫu đất, men nung.
+                </div>
+              </li>
+              <li class="ovp-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <div>
+                  <strong>Ưu đãi cặp đôi &amp; bạn bè:</strong> Nhận ngay ưu đãi đặc biệt khi đặt gói Gốm Ký Date hoặc rủ nhóm bạn cùng tham gia sáng tạo.
+                </div>
+              </li>
+              <li class="ovp-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <div>
+                  <strong>Kết nối cộng đồng yêu gốm:</strong> Tác phẩm của bạn sẽ được chụp ảnh lưu niệm và đồng hành cùng cộng đồng đam mê đồ gốm thủ công tại Hà Nội.
+                </div>
+              </li>
+            </ul>
+
+            <div class="concept-box" style="margin-top: 0.5rem;">
+              <div class="concept-box-title">
+                <span class="badge badge-sage">Địa điểm</span>
+                <span>Tầng 7, số 79 Hồ Tùng Mậu</span>
+              </div>
+              <p class="concept-box-text">
+                Vị trí thuận tiện, dễ tìm ngay trục đường chính Cầu Giấy – Từ Liêm. Không gian tầng cao thoáng mát, nhiều cây xanh và góc sống ảo ấm áp.
+              </p>
+            </div>
+          </div>
+
+          <!-- Form Đặt Lịch -->
+          <div class="booking-form-card">
+            <h3 class="form-title">Phiếu đăng ký đặt lịch</h3>
+            <p class="form-subtitle">Vui lòng điền thông tin để chúng tôi chuẩn bị nguyên vật liệu và không gian chu đáo nhất cho bạn.</p>
+
+            <form id="booking-form" novalidate>
+              <div class="form-grid">
+                <!-- Họ tên -->
+                <div class="form-group full-width">
+                  <label for="booking-name" class="form-label">
+                    <span>Họ và tên bạn</span>
+                    <span class="required-star">*</span>
+                  </label>
+                  <input type="text" id="booking-name" name="user_name" class="form-control" placeholder="Ví dụ: Nguyễn Minh Thư" required>
+                  <span class="form-hint">Để Gốm Ký tiện xưng hô khi liên hệ</span>
+                </div>
+
+                <!-- Số điện thoại / Email -->
+                <div class="form-group full-width">
+                  <label for="booking-contact" class="form-label">
+                    <span>Số điện thoại hoặc Email</span>
+                    <span class="required-star">*</span>
+                  </label>
+                  <input type="text" id="booking-contact" name="user_contact" class="form-control" placeholder="Ví dụ: 0987654321 hoặc ten@gmail.com" required>
+                  <span class="form-hint">Kênh liên hệ để xác nhận lịch hẹn</span>
+                </div>
+
+                <!-- Ngày mong muốn -->
+                <div class="form-group">
+                  <label for="booking-date" class="form-label">
+                    <span>Ngày mong muốn</span>
+                    <span class="required-star">*</span>
+                  </label>
+                  <input type="date" id="booking-date" name="booking_date" class="form-control" required>
+                </div>
+
+                <!-- Khung giờ -->
+                <div class="form-group">
+                  <label for="booking-time" class="form-label">
+                    <span>Khung giờ</span>
+                    <span class="required-star">*</span>
+                  </label>
+                  <select id="booking-time" name="time_slot" class="form-control" required>
+                    <option value="">-- Chọn khung giờ --</option>
+                    <option value="Sáng (9:00 - 12:00)">Sáng (9:00 - 12:00)</option>
+                    <option value="Chiều (13:30 - 17:30)">Chiều (13:30 - 17:30)</option>
+                    <option value="Tối (18:00 - 21:00)">Tối (18:00 - 21:00)</option>
+                  </select>
+                </div>
+
+                <!-- Số người -->
+                <div class="form-group">
+                  <label for="booking-guests" class="form-label">
+                    <span>Số lượng người</span>
+                    <span class="required-star">*</span>
+                  </label>
+                  <input type="number" id="booking-guests" name="guest_count" class="form-control" min="1" max="50" value="1" required>
+                </div>
+
+                <!-- Gói Workshop -->
+                <div class="form-group">
+                  <label for="booking-package" class="form-label">
+                    <span>Gói trải nghiệm</span>
+                    <span class="required-star">*</span>
+                  </label>
+                  <select id="booking-package" name="workshop_package" class="form-control" required>
+                    <option value="">-- Chọn gói mong muốn --</option>
+                    <option value="solo">Gốm Ký Solo — thời gian cho bản thân</option>
+                    <option value="date">Gốm Ký Date — dành cho hai người (Pottery Date)</option>
+                    <option value="together">Gốm Ký Together — nhóm bạn/gia đình</option>
+                    <option value="team">Gốm Ký Team — doanh nghiệp/CLB/team building</option>
+                    <option value="custom-order">Đặt làm gốm cá nhân hóa theo yêu cầu</option>
+                  </select>
+                </div>
+
+                <!-- Ghi chú -->
+                <div class="form-group full-width">
+                  <label for="booking-notes" class="form-label">
+                    <span>Ghi chú thêm</span>
+                    <span class="text-muted">(Không bắt buộc)</span>
+                  </label>
+                  <textarea id="booking-notes" name="booking_notes" class="form-control" rows="3" placeholder="Ví dụ: Bạn muốn khắc chữ kỷ niệm ngày cưới, muốn làm sản phẩm cho thú cưng, hoặc có yêu cầu đặc biệt về chỗ ngồi..."></textarea>
+                </div>
+              </div>
+
+              <!-- Nút submit form -->
+              <button type="submit" id="btn-booking-submit" class="btn btn-primary btn-full btn-submit">
+                <span class="btn-text">Gửi yêu cầu đặt lịch</span>
+                <span class="spinner" aria-hidden="true"></span>
+              </button>
+
+              <!-- Thông báo thành công theo đúng yêu cầu:
+                   "Cảm ơn bạn! Gốm Ký đã nhận được yêu cầu và sẽ liên hệ trong vòng 30 phút." -->
+              <div id="form-alert-success" class="form-alert form-alert-success" role="alert">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <div>Cảm ơn bạn! Gốm Ký đã nhận được yêu cầu và sẽ liên hệ trong vòng 30 phút.</div>
+              </div>
+
+              <!-- Thông báo lỗi theo đúng yêu cầu:
+                   "Có lỗi xảy ra, vui lòng thử lại hoặc liên hệ trực tiếp qua [số điện thoại/Fanpage]." -->
+              <div id="form-alert-error" class="form-alert form-alert-error" role="alert">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <div>Có lỗi xảy ra, vui lòng thử lại hoặc liên hệ trực tiếp qua số điện thoại hoặc Fanpage của Gốm Ký.</div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       - Thông tin địa chỉ: tầng 7, số 79 Hồ Tùng Mậu, Từ Liêm, Hà Nội
+       - Giờ hoạt động: 9:00–21:00 hằng ngày
+       - Cam kết phản hồi trong 30 phút
+       - Phục vụ khách hàng sinh viên, người đi làm, doanh nghiệp khu vực Cầu Giấy, Nam Từ Liêm, Thanh Xuân, Đống Đa, Hai Bà Trưng
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Cột 1: Thương hiệu & Slogan -->
+        <div class="footer-brand">
+          <h3>GỐM KÝ<span style="color: var(--primary-terracotta);">.</span></h3>
+          <p class="footer-slogan">"Chạm gốm bằng tay, để gốm kể thay lời bạn."</p>
+          <p class="footer-desc">
+            Mô hình coffee kết hợp workshop làm gốm và dịch vụ gốm cá nhân hóa. Biến hình ảnh, lời nhắn và kỷ niệm của bạn thành những tác phẩm gốm mộc mạc độc bản có thể cầm, dùng, trưng bày hoặc trao tặng.
+          </p>
+        </div>
+
+        <!-- Cột 2: Điều hướng nhanh -->
+        <div class="footer-col">
+          <h4>Khám phá</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Trang chủ</a></li>
+            <li><a href="#workshop">Workshop làm gốm</a></li>
+            <li><a href="#personalization">Gốm cá nhân hoá &amp; Mã QR</a></li>
+            <li><a href="#shop">Cửa hàng sản phẩm</a></li>
+            <li><a href="#booking">Đặt lịch hẹn</a></li>
+          </ul>
+        </div>
+
+        <!-- Cột 3: Thông tin liên hệ & Giờ mở cửa -->
+        <div class="footer-col">
+          <h4>Thông tin liên hệ</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Tầng 7, số 79 Hồ Tùng Mậu, Từ Liêm, Hà Nội</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>Giờ hoạt động: 9:00 – 21:00 hằng ngày</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>Tư vấn phản hồi trong vòng 30 phút trong giờ làm việc</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>Khu vực phục vụ: Cầu Giấy, Nam Từ Liêm, Thanh Xuân, Đống Đa, Hai Bà Trưng</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 GỐM KÝ. Tinh thần Thủ công &times; Công nghệ &times; Câu chuyện cá nhân.</p>
+        <p>Thiết kế trang đơn tối ưu nhúng Google Sites &amp; GitHub Pages.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
