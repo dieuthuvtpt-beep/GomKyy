@@ -9,7 +9,7 @@
 // ==========================================================================
 // Thông tin cấu hình EmailJS gửi về dieuthuvtpt@gmail.com
 const EMAILJS_SERVICE_ID = 'service_2ey39a5';
-const EMAILJS_TEMPLATE_ID = '8nrqkjh';
+const EMAILJS_TEMPLATE_ID = 'template_dfyeevs';
 const EMAILJS_PUBLIC_KEY = 'vS43lNfk7a2rfC35x';
 
 // Email người nhận chính thức của Gốm Ký
